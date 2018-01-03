@@ -14,6 +14,7 @@ call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
 call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
 call pathogen#helptags()
 
+
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
@@ -29,15 +30,6 @@ map <leader>o :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
-
-
-""""""""""""""""""""""""""""""
-" => YankStack
-""""""""""""""""""""""""""""""
-let g:yankstack_yank_keys = ['y', 'd']
-
-nmap <c-p> <Plug>yankstack_substitute_older_paste
-nmap <c-n> <Plug>yankstack_substitute_newer_paste
 
 
 """"""""""""""""""""""""""""""
@@ -239,20 +231,6 @@ nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
-
-""""""""""""""""""""""""""""""""""""""""""
-" => WinManager
-""""""""""""""""""""""""""""""""""""""""""
-let g:winManagerWindowLayout='NERDTree|BufExplorer'
-map <silent> <F3> :WMToggle<CR>
-imap <F3> <ESC> :WMToggle<CR>i
-
-
-""""""""""""""""""""""""""""""""""""""""""
-" => vim-indent-guides
-""""""""""""""""""""""""""""""""""""""""""
-let g:indent_guides_guide_size = 1
-let g:indent_guides_start_level = 2
 
 
 """"""""""""""""""""""""""""""""""""""""""

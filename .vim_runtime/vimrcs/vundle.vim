@@ -70,7 +70,7 @@ Plugin 'maxbrunsfeld/vim-yankstack'
 " Plugin '插件名称' 实际上是 Plugin 'vim-scripts/插件仓库名' 只是此处的用户名可以省略
 " Plugin 'L9'
 " Plugin 'winmanager'
-Plugin 'YankRing.vim'
+" Plugin 'YankRing.vim'
 " Plugin 'molokai'
 Plugin 'Zenburn'
 Plugin 'mayansmoke'

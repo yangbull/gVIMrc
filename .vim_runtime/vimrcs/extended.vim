@@ -10,9 +10,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set font according to system
 if has("mac") || has("macunix")
-    set gfn=Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
+    set gfn=IBM\ Plex\ Mono:h14,Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
 elseif has("win16") || has("win32")
-    "set gfn=Hack:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
+    "set gfn=IBM\ Plex\ Mono:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
     set gfn=DejaVu\ Sans\ Mono:h11:cANSI,Bitstream\ Vera\ Sans\ Mono:h11:cANSI,Consolas:h11:cANSI,Lucida_Console:h11:cANSI
     set gfw=Yahei\ Mono:h11:cGB2312,方正准圆简体:h11:cGB2312,幼圆:h11:cGB2312
 elseif has("gui_gtk2")
