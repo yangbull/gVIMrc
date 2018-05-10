@@ -5,8 +5,6 @@ rem cd .vim_runtime\my_plugins & git clone https://github.com/VundleVim/Vundle.v
 SETLOCAL
 SET "HOME=%~dp0"
 SET "VIMROOT=%HOME:~,-1%\vim80"
-echo %VIMROOT%
-pause
 
 IF '%*' equ '' (@START /d "%VIMROOT%" gvim.exe -c "normal '0") ELSE (
 @START /d "%VIMROOT%" gvim.exe --remote-tab-silent %1)
