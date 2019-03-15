@@ -113,55 +113,31 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:lightline#ale#indicator_checking = "\uf110"
-"let g:lightline#ale#indicator_warnings = "\uf071"
-"let g:lightline#ale#indicator_errors = "\uf05e"
-"let g:lightline#ale#indicator_ok = "\uf00c"
-
 let g:lightline = {
       \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \ 'left': [ [ 'mode', 'paste' ],
+      \           [ 'fugitive', 'readonly', 'filename', 'modified' ] ],
+      \ 'right': [ [ 'lineinfo' ], [ 'percent' ],
+      \            [ 'fileformat', 'fileencoding', 'filetype' ] ]
+      \ },
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
       \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-      \ },
-      \ 'component_expand': {
-      \  'linter_checking': 'lightline#ale#checking',
-      \  'linter_warnings': 'lightline#ale#warnings',
-      \  'linter_errors': 'lightline#ale#errors',
-      \  'linter_ok': 'lightline#ale#ok',
-      \ },
-      \ 'component_type': {
-      \     'linter_checking': 'left',
-      \     'linter_warnings': 'warning',
-      \     'linter_errors': 'error',
-      \     'linter_ok': 'left',
       \ },
       \ 'component_visible_condition': {
       \   'readonly': '(&filetype!="help"&& &readonly)',
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
-      \ 'separator': { 'left': "\u9654", 'right': "\u9664" },
-      \ 'subseparator': { 'left': '┃', 'right': '┃' }
+      \ 'separator': { 'left': '▶', 'right': '◀' },
+      \ 'subseparator': { 'left': '|', 'right': '|' }
       \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:airline_mode_map = {
-"      \ '__' : '-',
-"      \ 'n'  : 'N',
-"      \ 'i'  : 'I',
-"      \ 'R'  : 'R',
-"      \ 'c'  : 'C',
-"      \ 'v'  : 'V',
-"      \ 'V'  : 'V',
-"      \ '' : 'V',
-"      \ 's'  : 'S',
-"      \ 'S'  : 'S',
-"      \ '' : 'S',
-"      \ }
 let g:airline_theme="molokai"
 "这个是安装字体后 必须设置此项" 
 let g:airline_powerline_fonts = 1   
