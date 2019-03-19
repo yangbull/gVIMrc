@@ -4,6 +4,8 @@ filetype off                  " 必须
 " 设置包括vundle和初始化相关的runtime path
 set rtp+=~/.vim_runtime/my_plugins/Vundle.vim/
 call vundle#begin('~/.vim_runtime/my_plugins/')
+" 另一种选择, 指定一个vundle安装插件的路径
+"call vundle#begin('~/some/path/here')
 
 " 让vundle管理插件版本,必须
 Plugin 'VundleVim/Vundle.vim'
@@ -12,8 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 " 请将安装插件的命令放在vundle#begin和vundle#end之间.
 " Github上的插件
 " 格式为 Plugin '用户名/插件仓库名'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'w0rp/ale'
+" Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
@@ -26,8 +27,8 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Raimondi/delimitMate'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'terryma/vim-expand-region'
@@ -43,10 +44,11 @@ Plugin 'mbbill/undotree'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'yuttie/comfortable-motion.vim'
+" Plugin 'altercation/vim-colors-solarized'
 " Plugin 'dracula/vim'
 
 Plugin 'mileszs/ack.vim'
+" Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'chr4/nginx.vim'
 Plugin 'amix/open_file_under_cursor.vim'
 Plugin 'amix/vim-zenroom2'
@@ -63,13 +65,13 @@ Plugin 'morhetz/gruvbox'
 Plugin 'nvie/vim-flake8'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'maxbrunsfeld/vim-yankstack'
-Plugin 'itchyny/lightline.vim'
-Plugin 'maximbaz/lightline-ale'
+Plugin 'lifepillar/pgsql.vim'
 
 " 来自 http://vim-scripts.org/vim/scripts.html 的插件
 " Plugin '插件名称' 实际上是 Plugin 'vim-scripts/插件仓库名' 只是此处的用户名可以省略
 " Plugin 'L9'
 " Plugin 'winmanager'
+" Plugin 'YankRing.vim'
 " Plugin 'molokai'
 Plugin 'Zenburn'
 Plugin 'mayansmoke'
