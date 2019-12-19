@@ -24,7 +24,7 @@ rem   ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 
 SETLOCAL
 SET "HOME=%~dp0"
-SET "VIMROOT=%HOME:~,-1%\vim81"
+SET "VIMROOT=%HOME:~,-1%\vim82"
 
 IF '%*' equ '' (@START /d "%VIMROOT%" %~n0.exe -c "normal '0") ELSE (
 @START /d "%VIMROOT%" %~n0.exe --remote-tab-silent %*)
