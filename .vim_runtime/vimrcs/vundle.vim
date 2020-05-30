@@ -48,7 +48,7 @@ Plugin 'plasticboy/vim-markdown'
 " Plugin 'dracula/vim'
 
 Plugin 'mileszs/ack.vim'
-Plugin 'chr4/nginx.vim'
+" Plugin 'chr4/nginx.vim'
 Plugin 'amix/open_file_under_cursor.vim'
 Plugin 'amix/vim-zenroom2'
 Plugin 'MarcWeber/vim-addon-mw-utils'
