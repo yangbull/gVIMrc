@@ -1,5 +1,6 @@
 let g:ctrlp_cache_dir = '~/.vim_runtime/temp_dirs/.cache/ctrlp'
 let g:yankring_history_dir = '~/.vim_runtime/temp_dirs'
+let g:snipMate = { 'snippet_version' : 1 }
 
 set autochdir "自动切换工作目录
 set number
