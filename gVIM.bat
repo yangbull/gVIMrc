@@ -6,7 +6,7 @@ rem 查看当前代理设置
 rem git config --global http.proxy
 
 rem 设置当前代理为 http://127.0.0.1:1080 或 socket5://127.0.0.1:1080
-rem git config --global http.proxy 'http://127.0.0.1:1080'
+rem git config --global http.proxy "http://127.0.0.1:1080"
 rem git config --global https.proxy 'http://127.0.0.1:1080'
 rem git config --global http.proxy 'socks5://127.0.0.1:1080'
 rem git config --global https.proxy 'socks5://127.0.0.1:1080'
@@ -24,7 +24,7 @@ rem   ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
 
 SETLOCAL
 SET "HOME=%~dp0"
-SET "VIMROOT=%HOME:~,-1%\vim82"
+SET "VIMROOT=%HOME:~,-1%\vim90"
 
 IF '%*' equ '' (@START /d "%VIMROOT%" %~n0.exe -c "normal '0") ELSE (
 @START /d "%VIMROOT%" %~n0.exe --remote-tab-silent %*)
